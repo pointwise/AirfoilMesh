@@ -2,11 +2,13 @@ AirfoilMesh
 =================================================================
 A Glyph script for generating NACA 4-series airfoil geometries and boundary layer meshes.
 
+<img src="https://raw.github.com/pointwise/AirfoilMesh/master/ScriptImage.png"></img>
+
 Generating or Importing Geometry
 --------------------------------
 This script provides a way to generate NACA 4-Series airfoil geometries within Pointwise without relying on external coordinate files. Simply input the 4 digits defining a NACA 4-Series airfoil and click CREATE. However, the script does support the ability to import external airfoil coordinates from a segment file. The only requirement is that the airfoil should consist of three segments, the upper surface, lower surface, and trailing edge. In the current implementation, this script only handles airfoils with a finite trailing edge.
 
-### NACA 4-Series Geometry Description:
+### NACA 4-Series Geometry Description
 * The 1st digit is the maximum camber
 * The 2nd digit is the maximum camber location 
 * The 3rd and 4th digits represent the maximum thickness
