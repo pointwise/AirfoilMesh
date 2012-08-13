@@ -2,7 +2,7 @@ AirfoilMesh
 =================================================================
 A Glyph script for generating NACA 4-series airfoil geometries and boundary layer meshes.
 
-<img src="https://raw.github.com/pointwise/AirfoilMesh/master/ScriptImage.png"></img>
+![AirfoilMeshGUI](https://raw.github.com/pointwise/AirfoilMesh/master/ScriptImage.png)
 
 Generating or Importing Geometry
 --------------------------------
