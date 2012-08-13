@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>AirfoilMesh by pointwise</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>AirfoilMesh</h1>
+        <h2>A Glyph script for generating NACA 4-series airfoil geometries and boundary layer meshes.</h2>
+        <a href="https://github.com/pointwise/AirfoilMesh" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>AirfoilMesh</h1>
+
+<p>A Glyph script for generating NACA 4-series airfoil geometries and boundary layer meshes.</p>
+
+<p><img src="https://raw.github.com/pointwise/AirfoilMesh/master/ScriptImage.png" alt="AirfoilMeshGUI"></p>
+
+<h2>Generating or Importing Geometry</h2>
+
+<p>This script provides a way to generate NACA 4-Series airfoil geometries within Pointwise without relying on external coordinate files. Simply input the 4 digits defining a NACA 4-Series airfoil and click CREATE. However, the script does support the ability to import external airfoil coordinates from a segment file. The only requirement is that the airfoil should consist of three segments, the upper surface, lower surface, and trailing edge. In the current implementation, this script only handles airfoils with a finite trailing edge.</p>
+
+<h3>NACA 4-Series Geometry Description</h3>
+
+<ul>
+<li>The 1st digit is the maximum camber</li>
+<li>The 2nd digit is the maximum camber location </li>
+<li>The 3rd and 4th digits represent the maximum thickness</li>
+</ul><h3>Notes</h3>
+
+<ul>
+<li>All digits are a percentage of the chord length</li>
+<li>Maximum thickness occurs at 30% of the chord</li>
+<li>Chord length fixed to a unit length</li>
+<li>All airfoils have a flat trailing edge</li>
+</ul><h3>Example, NACA 2412</h3>
+
+<ul>
+<li>Maximum camber is 2% of the chord</li>
+<li>Maximum camber located at 40% of the chord</li>
+<li>Maximum thickness is 12% of the chord (located at 30% of the chord)</li>
+</ul><h2>Boundary Layer Meshing</h2>
+
+<p>This script also automates the mesh generation process within Pointwise by asking the user to provide common boundary layer parameters. Assuming a unit length for the airfoil, the parameters are factors of the chord length. Once the boundary layer parameters have been selected, click MESH to generate a high quality structured O-grid topology using Pointwise's normal hyperbolic extrusion tool. Note that while the user has the ability to adjust common boundary layer parameters, more advanced parameters can be found within the attached Glyph script.  </p>
+
+<h3>Boundary layer parameters</h3>
+
+<ul>
+<li>Initial cell height in the boundary layer</li>
+<li>Cell growth/inflation rate</li>
+<li>The maximum boundary layer distance</li>
+<li>The number of points around the airfoil, excluding the trailing edge</li>
+</ul><h2>Disclaimer</h2>
+
+<p>Scripts are freely provided. They are not supported products of Pointwise, Inc. Some scripts have been written and contributed by third parties outside of Pointwise's control.</p>
+
+<p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, POINTWISE DISCLAIMS ALL WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, WITH REGARD TO THESE SCRIPTS. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL POINTWISE BE LIABLE TO ANY PARTY FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF BUSINESS INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THE USE OF OR INABILITY TO USE THESE SCRIPTS EVEN IF POINTWISE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND REGARDLESS OF THE FAULT OR NEGLIGENCE OF POINTWISE.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/pointwise/AirfoilMesh/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/pointwise/AirfoilMesh/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/pointwise/AirfoilMesh"></a> is maintained by <a href="https://github.com/pointwise">pointwise</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
