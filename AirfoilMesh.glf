@@ -124,6 +124,7 @@ set p [expr {[string index $::naca 1]/10.0}]
 set a [string index $::naca 2]
 set b [string index $::naca 3]
 set c "$a$b"
+scan $c %d c
 set t [expr {$c/100.0}]
 
 # GENERATE AIRFOIL COORDINATES
