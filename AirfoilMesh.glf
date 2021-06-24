@@ -2,7 +2,7 @@
 #
 # (C) 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
 #
-# This sample source code is not supported by Cadence Design Systems, Inc.
+# This sample script is not supported by Cadence Design Systems, Inc.
 # It is provided freely for demonstration purposes only.
 # SEE THE WARRANTY DISCLAIMER AT THE BOTTOM OF THIS FILE.
 #
